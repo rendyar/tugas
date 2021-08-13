@@ -7,6 +7,57 @@
     <title>TUGAS </title>
 </head>
 <body>
-    yaaa
+    <script>
+
+        // metode sort
+        var huruf = ['f', 'e', 'h', 'g']
+        huruf.sort()
+        document.write(huruf) //["e", "f", "g", "h"]
+
+        // metode Reverse
+        var nilai = [5, 6, 7, 8, 9]
+        nilai.reverse()
+        document.write(nilai) // [9, 8, 7, 6, 5]
+
+        // metode shift
+        var hewan = ['tikus', 'ayam', 'ular', 'gajah']
+        hewan.shift()
+        document.write(hewan) // ["ayam", "ular", "gajah"]
+
+        // metode unshift
+        var hewan = ['beruang', 'semut', 'kambing', 'bebek']
+        hewan.unshift('lebah')
+        document.write(hewan) // ["lebah", "beruang", "semut", "kambing", "bebek"]
+
+        // metode push
+        var hewan = ['rusa', 'kuda', 'buaya', 'domba']
+        hewan.push('burung')
+        document.write(hewan) // ["rusa", "kuda", "buaya", "domba", "burung"]
+
+        // metode pop 
+        var hewan = ['ikan', 'singa', 'harimau', 'babi']
+        hewan.pop()
+        document.write(hewan) // ['ikan', 'singa', 'harimau']
+
+        // metode concat
+        var huruf = ['m', 'n', 'o', 'p']
+        var angka = [9, 10, 11, 12]
+        document.write(huruf.concat(angka)); // ["m", "n", "o", "p", 9, 10, 11, 12]
+
+        // metode join 
+        var nama = ['bagus', 'tia', 'arya', 'anis']
+        document.write(nama.join('-')) // [ 'bagus-tia-arya-anis' ]
+        
+        // metode mengubah elemen
+        var buah = ["jeruk", "mangga", "anggur", "pisang"];
+        buah[3] = "nanas";  
+        document.write(buah) // ['jeruk', 'mangga', 'anggur', 'nanas']
+        
+        // metode menghapus elemen
+        var buah = ["leci", "pepaya", "manggis", "durian"];
+        delete buah[2];     
+        document.write(buah) // ['leci', 'pepaya', 'durian']
+
+    </script>
 </body>
 </html>
