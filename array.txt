@@ -1,0 +1,26 @@
+SORT : digunakan untuk mengurutkan data didalam array sesuai dengan abjad
+
+REVERSE : digunakan untuk membalikkan dan mengurutkan dari data yang 
+paling akhir menjadi data yang paling awal
+
+SHIFT : digunakan untuk menghapus nilai array yang pertama
+
+UNSHIFT : digunakan untuk menambahkan value baru dan diletakkan di bagian
+awal.
+
+PUSH : digunakan untuk menambahkan nilai ke dalam sebuah array.
+
+POP :  digunakan untuk menghapus nilai di dalam array. nilai yang 
+di hapus adalah nilai yang letaknya di bagian paling akhir.
+
+CONCAT : digunakan untuk menggabungkan 2 array atau lebih menjadi 1 array. 
+metode concat tidak akan merubah nilai didalam array, melainkan membuat 
+array baru dengan menggabungkan kedua array.
+
+JOIN : digunakan untuk memberikan karakter pembatas untuk menyatukan 
+array yang terpisah, fungsi join sendiri adalah saat kita ingin 
+menuliskan nilai nilai dalam satu string dan ingin memberikan karakter
+pembatas.
+
+
+

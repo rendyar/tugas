@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>ANTAR AJA</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="data">
+        <form>
+            <fieldset>
+            <legend>DATA</legend>
+            <p>
+                <label style="font-size: 17px; margin-left: 35%;">Nama pengirim:</label>
+                <input type="text" id="nama" style="margin-left: 7px;"></input>
+            </p>
+            <p>
+                <label style="font-size: 17px; margin-left: 35%;">Nama penerima:</label>
+                <input type="text" id="jenis" style="margin-left: 4px;"></input>
+            </p>
+            <p>
+                <label style="font-size: 17px; margin-left: 35%;">Jenis barang:</label>
+                <input type="text" id="jenis" style="margin-left: 35px;"></input>
+            </p>   
+            <p style="font-size: 17px; margin-left: 35%;">Alamat</p>
+            
+            <textarea name="alamat" id="alamat" cols="40" rows="5" style="margin-left: 35%"></textarea>
+            <center>
+            <br>
+                <h3 style="font-family: Noto Sans;">Ketarangan harga</h3>
+                <br>
+                    <input type="button" value="HARGA" onclick="harga()"/>
+                </p>
+            </center>
+                <br>
+                <p style="font-size: 17px; margin-left: 35%;">Harga jarak pengiriman: </p>
+                <p id="km" style="font-size: 17px; margin-left: 35%;"></p>
+                <p style="font-size: 17px; margin-left: 35%;">Harga berat barang:</p>
+                <p id="kg" style="font-size: 17px; margin-left: 35%;"></p>
+                <p style="font-size: 17px; margin-left: 35%;">Harga total:</p>
+                <p id="hasilharga" style="font-size: 17px; margin-left: 35%;"></p>
+                <button style="margin-left: 35%;">sumbit</button>
+            </fieldset>
+        </form>
+    </div>
+    <script src="file.js"></script>
+    </body>
+</html>
