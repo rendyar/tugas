@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+        //foreach mencetak item didalam array
+        var bulan = ["Januari", "Februari", "Maret", "April"];
+
+        for(i = 0; i < bulan.length; i++){
+        document.write(i+". "+ bulan[i] + "<br/>");
+        }
+
+
+        //metode foreach dari array
+        var buah = ["jambu", "anggur", "leci", "manggis", "melon"];
+
+        buah.forEach(function(buah){
+        document.write("<p>" + buah + "</p>");
+        })
+
+        </script>
+    </body>
+</html>
