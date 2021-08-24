@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <title>FORM DATA</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-group">
+                <label for="namasiswa">Nama siswa</label>
+                <input type="text" class="form-control" id="data_namasiswa">
+                <label for="nisn">Nisn</label>
+                <input type="text" class="form-control" id="data_nisn">
+            </div>
+            <label for="kelas">Kelas</label>
+                <select class="form-control" id="data_kelas">
+                <option value="">Pilih Kelas</option>
+                <option value="X">X</option>
+                <option value="XI">XI</option>
+                <option value="XII">XII</option>
+            </select>
+            <label for="kelamin">Jenis kelamin</label>
+            <select class="form-control" id="data_kelamin">
+            <option value="">Pilih Jenis Kelamin</option>
+            <option value="Laki-Laki">Laki-Laki</option>
+            <option value="Perempuan">Perempuan</option>
+            </select>
+                <label for="alamat">Alamat</label>
+                <textarea class="form-control" id="data_alamat" rows="3"></textarea>
+            <button class="btn btn-primary mt-4" onclick="tambah()">SIMPAN</button>
+
+            <table class="table mt-4">
+                <thead>
+                  <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Nama Siswa</th>
+                    <th scope="col">Nisn</th>
+                    <th scope="col">Jenis Kelamin</th>
+                    <th scope="col">Kelas</th>
+                    <th scope="col">Alamat</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody id="tampildata">
+                </tbody>
+              </table>
+        </div>
+
+        <script>
+            var namasiswa = []
+            var nisn = []
+            var kelamin = []
+            var kelas = []
+            var alamat = []
+
+            var tampil = document.getElementById('tampildata')
+
+            function ShowData() {
+                tampil.innerHTML = ""
+
+                for(i = 0; i<namasiswa.length; i++){
+                    var nodata = i+1
+                    tampil.innerHTML += "<tr>"+
+                        "<td>"+nodata+"</td>"+
+                        "<td>"+namasiswa[i]+"</td>"+
+                        "<td>"+nisn[i]+"</td>"+
+                        "<td>"+kelamin[i]+"</td>"+
+                        "<td>"+kelas[i]+"</td>"+
+                        "<td>"+alamat[i]+"</td>"+
+                        "<td>"+
+                            "<button class='btn btn-warning' onclick='edit("+ i +")'>EDIT</button>"+
+                            "<button class='btn btn-danger' onclick='hapus("+ i +")'>HAPUS</button>"+
+                        "</td>"+
+                  "</tr>"
+                }
+            }
+
+            ShowData()
+
+            function tambah() {
+                var namabaru = document.getElementById('data_namasiswa').value
+                var nisnbaru = document.getElementById('data_nisn').value
+                var kelaminbaru = document.getElementById('data_kelamin').value
+                var kelasbaru = document.getElementById('data_kelas').value
+                var alamatbaru = document.getElementById('data_alamat').value
+
+                namasiswa.push(namabaru)
+                nisn.push(nisnbaru)
+                kelamin.push(kelaminbaru)
+                kelas.push(kelasbaru)
+                alamat.push(alamatbaru)
+
+                ShowData()
+
+            }
+
+            function edit(id){
+                var editnama = prompt("Ganti Nama",namasiswa[id])
+                namasiswa[id] = editnama;
+
+                var editnisn = prompt("Ganti Nisn",nisn[id])
+                nisn[id] = editnisn;
+
+                var editkelamin = prompt("Ganti Jenis Kelamin",kelamin[id])
+                kelamin[id] = editkelamin;
+                
+                var editkelas = prompt("Ganti Kelas",kelas[id])
+                kelas[id] = editkelas;
+
+                var editalamat = prompt("Ganti alamat",alamat[id])
+                alamat[id] = editalamat;
+
+                ShowData()
+            }
+
+            function hapus(i) {
+                var namabaru = document.getElementById('data_namasiswa').value
+                var nisnbaru = document.getElementById('data_nisn').value
+                var kelaminbaru = document.getElementById('data_kelamin').value
+                var kelasbaru = document.getElementById('data_kelas').value
+                var alamatbaru = document.getElementById('data_alamat').value
+
+                namasiswa.splice(i,1)
+                nisn.splice(i,1)
+                kelamin.splice(i,1)
+                kelas.splice(i,1)
+                alamat.splice(i,1)
+
+                ShowData()
+            
+            }
+        </script>
+    </body>
+</html>
