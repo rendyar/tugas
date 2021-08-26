@@ -32,7 +32,7 @@
                             <td>Rp. <span id="pajak"></span></td>
                         </tr>
                         <tr class="bg-dark text-white">
-                            <td>Total bayar (10%)</td>
+                            <td>Total bayar</td>
                             <td>Rp. <span id="totalbayar"></span></td>
                         </tr>
                     </tbody>
@@ -111,6 +111,7 @@
                   }else{
                     diskon = 0
                   }
+                  totalbayar = hargatotal-diskon+pajak
 
                   var totalbelanja = totalbayar - pajak
                       tampilpajak.innerHTML = pajak
