@@ -1,0 +1,10 @@
+.jumbotron {
+    height: 350px;
+    background-image: url(https://bkdelivery.co.id/media/slider_image/2020/11/3/bwwvgzkfgv7gg7bzsis3rk.jpg);
+    background-size: cover;
+    background-position-y: -40px;
+}
+
+.titlelist {
+    height: 40px;
+}
