@@ -7,4 +7,19 @@
 
 .titlelist {
     height: 40px;
+    margin: center;
+}
+
+.footer {
+    background-color: rgb(27, 25, 25);
+    height: auto;
+    padding-bottom: 20px;
+    margin-top: 10%;
+}
+
+.footer p {
+    font-family: "Open Sans";
+    text-align: center;
+    padding-top: 20px;
+    color: white;
 }
